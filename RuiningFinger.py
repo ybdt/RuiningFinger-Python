@@ -584,8 +584,8 @@ def banner(count):
 
 
 def main():
-    # 输出banner
-    with open("RuiningFinger.json", "r") as fr:
+    # Output banner
+    with open("RuiningFinger.json", "r", encoding="utf-8") as fr:
         fingerprint = json.load(fr)
         fingers = fingerprint["fingerprint"]
     banner(len(fingers))
